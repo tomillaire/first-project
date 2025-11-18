@@ -10,23 +10,91 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-@font-face {
-  font-family: Raleway;
-  src:
-    url(./Raleway-Regular.woff2) format('woff2'),
-    url(./Raleway-Regular.woff) format('woff');
-  font-weight: normal;
-  font-display: swap;
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 96px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #000000;
 }
 
-@font-face {
-  font-family: Raleway;
-  src:
-    url(./Raleway-Bold.woff2) format('woff2'),
-    url(./Raleway-Bold.woff) format('woff');
-  font-weight: bold;
-  font-display: swap;
+
+.header__nav {
+  display: flex;
+  justify-self: left
+  font-size: 18px;
+  align-items: center;
+  gap: 15px;
 }
+
+.header__nav a {
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  justify-self: center;
+}
+
+.header__main-text {
+  font-size: 18px;
+  
+}
+ .header__menu {
+     list-style: circle;
+     padding-left: 15px;
+     display: flex;
+     gap: 33px; 
+   }
+   .header__menu li {
+     font-size: 18px;
+     
+   }
+
+  
+
+.header__logo {
+  justify-self: center;
+  align-items: center;
+  margin: auto;
+  
+
+}
+
+.header__logo img {
+  width: 105px;
+  height: 148px;
+  display: block;
+}
+
+.header__address {
+  margin-right: 0;
+  padding: 0;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 240px;
+  gap: 2px;
+  justify-self: center;
+  font-size: 18px;
+  text-underline-offset: 4px;
+}
+
+.header__address a {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.header__address span {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.15;
+  
+}
+
 
 h1,
 h2,
@@ -50,3 +118,51 @@ a {
 img {
   width: 100%;
 }
+
+.footer {
+  margin-top: 180px;     
+  padding: 0px 0px;    
+  background-color: #ffffff; 
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__address {
+ margin-right: 154px;
+ margin-left: 50px;
+}
+
+.footer__address address {
+  font-weight: normal;
+  font-family: inherit;
+  font-size: 18px;
+  
+}
+
+
+.footer__menu {
+ margin-right: 178px;
+}
+
+.footer__social {
+  margin-right: 50px;  
+}
+
+.footer__social ul {
+    display: flex;
+    gap: 48px; 
+    justify-content: center; 
+    align-items: center;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social img {
+    width: 40px;   
+    height: 40px;
+    display: block;
+}
+

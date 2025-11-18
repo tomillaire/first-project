@@ -5,30 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  <header>
-  <nav>
-  <a><img src="logo.svg" alt="Оно тебе надо" width="148" height="105"></a>
-
   
-  <address></address>
+
+  <header class="header">
+  <nav class="header__nav">
+    <span class="header__main-text">главная</span>
+    <ul class="header__menu">
+       <li><a href="#">посмотреть лоты</a></li>
+       <li><a href="#">об аукционе</a></li>
+     </ul>
   </nav>
-  </header>
+
+  <div class="header__logo">
+    <a>
+    <img src="logo-black.svg" alt="Оно тебе надо">
+  </a>
+  </div>
+
+  <address class="header__address">
+    <a href="tel:+99995555555">+9 999 555 5555</a>
+    <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+    <span>наб. Принсенграхт 263–
+    265, Амстердам</span>
+  </address>
+</header>
+
 
   <main>
   <section class="main-section main-section-cover">
     <!-- Контент первой секции (например, приветствие или баннер) -->
-  </section>
+  <div class="cover">
+    <h1>Заголовок страницы</h1>
+    <div class="description">
+    Здесь краткое описание или слоган вашего сайта.
+  </div>
+   <p></p>
+   <button></button>
+   </section>
+
   <section class="main-section main-section-lots">
-    <!-- Контент второй секции (например, список лотов) -->
+     <ul class="lots__list">
+    <li>
+      <a href="#">
+        <article>
+          <h3>Фильм режиссёра, который бросил киношколу</h3>
+          <p>Не просто бросил, а ушёл в середине недели...</p>
+        </article>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <article>
+          <h3>Книга, где описан скучный день рекламного агента</h3>
+          <p>Объявим полную тьму...</p>
+        </article>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <article>
+          <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+          <p>Ну действительно, там линии, тут кучу красок...</p>
+        </article>
+      </a>
+    </li>
+  </ul>
+  <a class="lots__more" href="#">посмотреть больше</a>
   </section>
+
   <section class="main-section main-section-about">
-    <!-- Контент третьей секции (например, информация о проекте) -->
-  </section>
+  <div class="about__column about__column_image">
+    <img src="logo-white.svg" alt="Оно тебе надо">
+  </div>
+  <div class="about__column about__column_content">
+    <h2>Об аукционе</h2>
+    <div class="about__text-group">
+      <p>Здесь вы не встретите очередное пафосное собрание...</p>
+      <p>Наша цель — вдохновить и удивить!</p>
+      <!-- Можно добавить ещё параграфы -->
+    </div>
+  </div>
+</section>
+</div>
   </main>
 
-  <footer></footer>
+  <footer>
+    <footer class="footer">
+  <address class="footer__address">
+    <a href="tel:+99995555555">+9 999 555 5555</a> 
+    <a href="mailto:info@sobaka.ge">info@sobaka.ge</a> 
+    <span class="footer__location">
+      наб. Принсенграхт 263–265,<br>
+      Амстердам
+    </span>
+  </address>
+
+  
+  </div>
+  <nav class="footer__menu">
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Посмотреть лоты</a></li>
+      <li><a href="#">Об аукционе</a></li>
+    </ul>
+  </nav>
+  <div class="footer__social">
+    <ul>
+      <li><a href="#" aria-label="YouTube"><img src="yt.svg" alt=""></a></li>
+      <li><a href="#" aria-label="ВКонтакте"><img src="vk.svg" alt=""></a></li>
+      <li><a href="#" aria-label="Pinterest"><img src="pinterest.svg" alt=""></a></li>
+      
+    </ul>
+  </div>
+</footer>
+</footer>
   </body>
 </html>
