@@ -164,32 +164,127 @@
   z-index: 2;
   color: #fff;
   font-size: 22px;
-  letter-spacing: 0.19em;
+  
 }
 
 .cover__subtitle {
   color: #fff;
   font-size: 22px;
-  letter-spacing: 0.14em;
+  letter-spacing: -0.01em;
   margin: 0;
+  word-spacing: 22px;
 }
 
 .cover__button {
   border: 1px solid #fff;
   background: transparent;
   color: #fff;
-  padding: 14px 40px;
+  padding: 12px 31px;
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
-.cover__button:hover {
-  background: #fff;
-  color: #222;
+
+.lots__title {
+font-size: 40px;
+margin: 180px 915px 27px 40px;
+}
+
+.lots {
+  max-width: 1100px;
 }
 
 
+.lots__cards {
+  display: flex;
+  gap: 25px; 
+  padding-left: 24px;
+  padding-right: 24px;
+  
+}
+
+.lots__card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  background: #222;
+  color: #fff;
+  padding: 24px;
+  min-height: 596px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  font-size: 22px;
+  padding: 48px 40px 48px 40px;
+}
+
+.lots__card:nth-child(1) {
+  background-image: url('card-lot-01.jpg');
+}
+.lots__card:nth-child(2) {
+  background-image: url('card-lot-02.jpg');
+}
+.lots__card:nth-child(3) {
+  background-image: url('card-lot-03.jpg');
+}
+
+.lots__card-text-wrapper {
+  margin-top: auto;        
+  position: relative;
+  z-index: 1;
+
+}
+.lots__card-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-decoration: underline;
+
+}
+.lots__card-text {
+  font-size: 20px;
+}
+
+.lots__card-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.60);
+  z-index: 0;
+}
+
+.lots__card-title,
+.lots__card-text {
+  position: relative;
+  z-index: 1;
+}
+
+.lots__card-text-wrapper {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.lots-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-more-link {
+  margin-top: 30px;
+  margin-left: 64px;
+  color: #000000;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  
+
+}
 
 .footer {
   margin-top: 180px;     
